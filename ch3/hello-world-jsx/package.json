@@ -1,0 +1,19 @@
+{
+  "name": "hello-world-jsx",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1"
+  },
+  "scripts": {
+    "build" : "./node_modules/.bin/babel ./js/script.jsx -o ./js/script.js",
+    "start" : "yarn run build & http-server"
+  }
+}
