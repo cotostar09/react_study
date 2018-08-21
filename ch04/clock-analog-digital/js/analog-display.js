@@ -1,6 +1,5 @@
 const AnalogDisplay = function (props) {
-  let date = new Date();
-  console.log(props.time);
+  let date = new Date(props.time);
   let dialStyle = {
     position: 'relative',
     top: 0,
